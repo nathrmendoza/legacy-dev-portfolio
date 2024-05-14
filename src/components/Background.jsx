@@ -8,7 +8,7 @@ export const ExpRow = styled.div`
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    margin: 0 0 12px;
+    margin: 0 0 16px;
     &:last-child {
         margin: 0;
     }
@@ -41,7 +41,7 @@ export const Description = styled.p`
 
 const Background = () => {
     return (
-      <NarrowDiv style={{marginBottom: '72px'}}>
+      <NarrowDiv style={{marginBottom: '96px'}}>
         <TypeH2 style={{textAlign: 'center'}}>Background</TypeH2>
         <ExpRow>
             <YearLabel>2016</YearLabel>

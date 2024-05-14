@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Laika Shop",
+        "desc": "Built a Shopify theme for Laika, a film animation studio. Utilized Shopiy liquid, sass and native javascript for the build.",
+        "imgSrc": "./works-thumb/laika-thumb.jpg",
+        "workLink": "https://shop.laika.com/",
+        "workCode": null
+    },
+    {
+        "name": "Cobram Estate",
+        "desc": "Built and managed a Shopify store for Cobram Estate Olive Oil. Built the theme, managed/configured complex solutions for subscriptions, built some internal apps using remix.",
+        "imgSrc": "./works-thumb/cobram-thumb.jpg",
+        "workLink": "https://cobramestate.com.au/",
+        "workCode": null
+    }
+]

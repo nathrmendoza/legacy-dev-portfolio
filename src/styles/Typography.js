@@ -17,6 +17,14 @@ export const TypeH2 = styled.h2`
     margin: 0 0 24px;
 `
 
+export const TypeH3 = styled.h3`
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    font-family: ${getTheme('primaryFont')};
+    margin: 0 0 16px;
+`
+
 export const TypeText = styled.p`
     font-size: 18px;
     line-height: 26px;
