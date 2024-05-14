@@ -54,6 +54,37 @@ export const GlobalStyles = createGlobalStyle`
 
     /* END RESET CSS */
 
+    /* START FONTS */
+    @font-face {
+        font-family: 'Courier';
+        font-weight: 400;
+        font-style: normal;
+        src: url('./fonts/CourierPrime-Regular.woff2') format('woff2'),
+             url('./fonts/CourierPrime-Regular.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'Courier';
+        font-weight: 400;
+        font-style: italic;
+        src: url('./fonts/CourierPrime-Italic.woff2') format('woff2'),
+             url('./fonts/CourierPrime-Italic.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'Courier';
+        font-weight: 700;
+        font-style: normal;
+        src: url('./fonts/CourierPrime-Bold.woff2') format('woff2'),
+             url('./fonts/CourierPrime-Bold.woff') format('woff');
+    }
+    @font-face {
+        font-family: 'Courier';
+        font-weight: 700;
+        font-style: italic;
+        src: url('./fonts/CourierPrime-BoldItalic.woff2') format('woff2'),
+             url('./fonts/CourierPrime-BoldItalic.woff') format('woff');
+    }
+    /* END FONTS */
+
     /* START GLOBAL CSS */
     * {
         box-sizing: border-box;
@@ -61,6 +92,9 @@ export const GlobalStyles = createGlobalStyle`
     body {
         color: ${getTheme('textColor')};
         background-color: ${getTheme('primaryColor')}
+    }
+    b, strong {
+        font-weight: 700;
     }
     /* END GLOBAL CSS */
 `
