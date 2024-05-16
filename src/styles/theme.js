@@ -4,5 +4,7 @@ export const theme = {
     textColor: '#FFFFFF',
     narrowWidth: '768px',
     wideWidth: '1280px',
-    primaryFont: 'Courier, serif'
+    primaryFont: 'Courier, serif',
+    darkColor: '#202023',
+    lightColor: '#ffffff'
 }

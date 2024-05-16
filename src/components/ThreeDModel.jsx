@@ -8,7 +8,7 @@ import AsciiRenderer from '../utils/AsciiRenderer';
 import Model from './Model'
 import UILoader from './Loader';
 
-export const ThreeContainer = styled.div`
+const ThreeContainer = styled.div`
   width: 100%;
   max-width: 768px;
   max-height: 640px;

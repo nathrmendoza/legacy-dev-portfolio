@@ -1,16 +1,92 @@
 [
     {
         "name": "Laika Shop",
-        "desc": "Built a Shopify theme for Laika, a film animation studio. Utilized Shopiy liquid, sass and native javascript for the build.",
-        "imgSrc": "./works-thumb/laika-thumb.jpg",
+        "desc": "Built a Shopify theme for Laika, a film animation studio. Utilized Shopiy liquid, Sass and Javascript alongside JQuery for the build.",
+        "imgSrc": "./works/laika-thumb.jpg",
+        "fullImage": "./works/laika-full.jpg",
         "workLink": "https://shop.laika.com/",
-        "workCode": null
+        "workCode": null,
+        "bgColor": "#ffffff",
+        "textColor": "dark"
     },
     {
         "name": "Cobram Estate",
         "desc": "Built and managed a Shopify store for Cobram Estate Olive Oil. Built the theme, managed/configured complex solutions for subscriptions, built some internal apps using remix.",
-        "imgSrc": "./works-thumb/cobram-thumb.jpg",
+        "imgSrc": "./works/cobram-thumb.jpg",
+        "fullImage": "./works/cobram-full.jpg",
         "workLink": "https://cobramestate.com.au/",
-        "workCode": null
+        "workCode": null,
+        "bgColor": "#edcb7b",
+        "textColor": "dark"
+    },
+    {
+        "name": "Bruce Insurance",
+        "desc": "Built a Wordpress site for an Australian insurance company, tech used was Php, Sass and Javascript with Jquery.",
+        "imgSrc": "./works/bruce-thumb.jpg",
+        "fullImage": "./works/bruce-full.jpg",
+        "workLink": "https://www.bruce.com.au/",
+        "workCode": null,
+        "bgColor": "#4C8FCD",
+        "textColor": "light"
+    },
+    {
+        "name": "Wild Kiwihearts",
+        "desc": "Built a Shopify store for an New Zealand cosmetic company, tech used was Liquid, Sass and Javascript with Jquery.",
+        "imgSrc": "./works/wkhearts-thumb.jpg",
+        "fullImage": "./works/wkhearts-full.jpg",
+        "workLink": "https://wildkiwihearts.com/",
+        "workCode": null,
+        "bgColor": "#355755",
+        "textColor": "light"
+    },
+    {
+        "name": "Core Energy Belt",
+        "desc": "Built a Shopify store for an international baseball, golf and softball belts supplier, tech used was Liquid, Sass and Javascript with Jquery.",
+        "imgSrc": "./works/cebelt-thumb.jpg",
+        "fullImage": "./works/cebelt-full.jpg",
+        "workLink": "https://coreenergybelt.com/",
+        "workCode": null,
+        "bgColor": "#B6987D",
+        "textColor": "light"
+    },
+    {
+        "name": "WSCC",
+        "desc": "Collaborated building a Craft site for a Washington based catholic conference. Site was built with Craft which used twig templating also utilized Sass and Javascript.",
+        "imgSrc": "./works/wscc-thumb.jpg",
+        "fullImage": "./works/wscc-full.jpg",
+        "workLink": "https://www.wacatholics.org/",
+        "workCode": null,
+        "bgColor": "#0075F2",
+        "textColor": "light"
+    },
+    {
+        "name": "Sta. Lucia Land Inc.",
+        "desc": "Built a Wordpress site for a real estate company in the Philippines. Site utilized Php, Sass and Javascript along with jQuery.",
+        "imgSrc": "./works/sli-thumb.jpg",
+        "fullImage": "./works/sli-full.jpg",
+        "workLink": "https://stalucialand.com.ph/",
+        "workCode": null,
+        "bgColor": "#0D4C33",
+        "textColor": "light"
+    },
+    {
+        "name": "Cadent TV",
+        "desc": "Collaborated building a Wordpress site for a tv advertising company in New York. Site utilized Php, Sass and Javascript along with jQuery.",
+        "imgSrc": "./works/cadent-thumb.jpg",
+        "fullImage": "./works/cadent-full.jpg",
+        "workLink": "https://cadent.tv/insights/",
+        "workCode": null,
+        "bgColor": "#23EBF0",
+        "textColor": "dark"
+    },
+    {
+        "name": "Sapporo Products",
+        "desc": "Built a Wordpress site for a manufacturer and distributor of vermicelli. Site utilized Php, Sass and Javascript along with jQuery.",
+        "imgSrc": "./works/sapp-thumb.jpg",
+        "fullImage": "./works/sapp-full.jpg",
+        "workLink": "https://sapporoproducts.com/",
+        "workCode": null,
+        "bgColor": "#36A0E0",
+        "textColor": "light"
     }
 ]

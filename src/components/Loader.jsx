@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components"
 
-export const LoaderContainer = styled.div`
+const LoaderContainer = styled.div`
     width: 100%;
     max-width: 768px;
     margin: 0 auto;

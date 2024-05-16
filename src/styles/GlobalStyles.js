@@ -96,5 +96,8 @@ export const GlobalStyles = createGlobalStyle`
     b, strong {
         font-weight: 700;
     }
+    .no-scroll {
+        overflow: hidden!important;
+    }
     /* END GLOBAL CSS */
 `

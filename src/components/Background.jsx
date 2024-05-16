@@ -3,7 +3,7 @@ import { NarrowDiv } from "../styles/ThemeContainers"
 import { TypeH2, TypeText } from "../styles/Typography"
 import { getTheme } from "../styles/ThemeUtils"
 
-export const ExpRow = styled.div`
+const ExpRow = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -14,7 +14,7 @@ export const ExpRow = styled.div`
     }
 `
 
-export const YearLabel = styled.span`
+const YearLabel = styled.span`
     font-size: 18px;
     line-height: 26px;
     font-family: ${getTheme('primaryFont')};
@@ -31,7 +31,7 @@ export const YearLabel = styled.span`
     }
 `
 
-export const Description = styled.p`
+const Description = styled.p`
     font-size: 18px;
     line-height: 24px;
     font-family: ${getTheme('primaryFont')};
