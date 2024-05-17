@@ -6,6 +6,8 @@ import ThreeDContainer from './components/ThreeDModel'
 import Overview from './components/Overview'
 import Background from './components/Background'
 import Work from './components/Work'
+import Tools from './components/Tools'
+import GetInTouch from './components/GetInTouch'
 
 const App = () => {
 
@@ -16,6 +18,8 @@ const App = () => {
       <Overview/>
       <Background/>
       <Work/>
+      <Tools/>
+      <GetInTouch/>
     </ThemeProvider>
   )
 }
