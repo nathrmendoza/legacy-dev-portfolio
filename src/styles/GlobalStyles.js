@@ -99,5 +99,35 @@ export const GlobalStyles = createGlobalStyle`
     .no-scroll {
         overflow: hidden!important;
     }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        border-radius: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: ${getTheme('scrollbarTrack')};
+        border-radius: 8px;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background-color: ${getTheme('scrollbarThumb')};
+        border-radius: 8px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: ${getTheme('scrollbarThumbHover')};
+      }
+      
+      ::-webkit-scrollbar-button {
+        display: none;
+      }
+      
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: ${getTheme('scrollbarThumb')} ${getTheme('scrollbarTrack')};
+      }
+      
     /* END GLOBAL CSS */
 `

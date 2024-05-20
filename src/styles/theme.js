@@ -6,5 +6,8 @@ export const theme = {
     wideWidth: '1280px',
     primaryFont: 'Courier, serif',
     darkColor: '#202023',
-    lightColor: '#ffffff'
+    lightColor: '#ffffff',
+    scrollbarTrack: '#333',
+    scrollbarThumb: 'rgba(200, 200, 200, 0.6)',
+    scrollbarThumbHover: 'rgba(200, 200, 200, 0.8)'
 }

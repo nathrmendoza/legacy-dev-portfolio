@@ -26,15 +26,15 @@ const MainContainer = styled.div`
 
 const PopupContainer = styled.div`
     position: relative;
-    width: 90vw;
-    height: 90vh;
+    width: 95vw;
+    height: 93vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     border-radius: 8px;
     animation: ${popupZoom} 1s ease-out forwards;
-    padding: 72px 32px 32px;
+    padding: 32px 56px 32px;
 
     display: flex;
     flex-direction: column;
@@ -105,8 +105,9 @@ const ViewSiteAnchor = styled.a`
 
 const ScreenshotContainer = styled.div`
     overflow-y: auto;
-    width: 100%;
+    width: 87.5%;
     flex: 1;
+    margin: 0 auto;
 `
 
 const Screenshot = styled.img`
