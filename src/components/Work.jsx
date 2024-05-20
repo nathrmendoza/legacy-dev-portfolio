@@ -7,12 +7,20 @@ import WorkItem from "./WorkItem";
 import { useState } from "react";
 import WorkFeature from "./WorkFeature";
 
+import { titleFadeIn, textFadeIn, divsFadeIn } from "../utils/FramerMotionAnimations";
+
 const WorkContainer = styled.div`
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 56px -24px 0;
+    row-gap: 48px;
+
+    @media only screen and (max-width: 640px) {
+        margin: 40px 0 0;
+        row-gap: 30px;
+    }
 `
 
 const Work = () => {
@@ -38,9 +46,9 @@ const Work = () => {
     return (
         <>
         {popupState ? <WorkFeature work={workFeature} hidePopupHandle={hidePopup} /> : null}
-        <NarrowDiv style={{marginBottom: '72px'}}>
-            <TypeH2 style={{textAlign: 'center'}}>Works</TypeH2>
-            <TypeText style={{textAlign: 'justify'}}>I've listed below some of the projects I've made throughout my career as a developer. Some are works of my own and others are works I've made for the company I've worked for. Go ahead, take a gander.</TypeText>
+        <NarrowDiv>
+            <TypeH2 {...titleFadeIn} style={{textAlign: 'center'}}>Works</TypeH2>
+            <TypeText {...textFadeIn} style={{textAlign: 'justify'}}>I've listed below some of the projects I've made throughout my career as a developer. Some are works of my own and others are works I've made for the company I've worked for. Go ahead, take a gander.</TypeText>
             <WorkContainer>
                 {works.map((work, index) => <WorkItem key={index} work={work} showPopupHandle={showPopup}/>)}
             </WorkContainer>

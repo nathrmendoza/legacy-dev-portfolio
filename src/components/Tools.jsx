@@ -12,6 +12,7 @@ import { SiJavascript, SiPhp, SiShopify } from "react-icons/si";
 import { NarrowDiv } from "../styles/ThemeContainers"
 import { TypeH2, TypeText } from "../styles/Typography"
 import { FaCss3 } from "react-icons/fa";
+import { divsFadeIn, textFadeIn, titleFadeIn } from "../utils/FramerMotionAnimations";
 
 const ToolsList = styled.div`
     display: flex;
@@ -19,12 +20,12 @@ const ToolsList = styled.div`
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 48px -36px 0;
+    row-gap: 42px;
 `
 
 const ToolItem = styled.div`
     width: 20%;
     padding: 0 36px;
-    margin: 0 0 42px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,18 +40,25 @@ const ToolItem = styled.div`
             opacity: 0.75;
         }
     }
+
+    @media only screen and (max-width: 768px) {
+        width: 25%;
+    }
+    @media only screen and (max-width: 480px) {
+        width: 33.333%;
+    }
 `
 
 const tools = ["HTML", "CSS", "Javascript", "PHP", "React", "jQuery", "Wordpress", "Shopify"]
 
 const Tools = () => {
     return(
-        <NarrowDiv style={{marginBottom: '72px'}} >
-            <TypeH2 style={{textAlign: 'center'}}>Tools of Trade</TypeH2>
-            <TypeText style={{textAlign: 'justify'}}>Below I've listed the technologies utilized in my projects. Gained proficiency using these tools through experience and interest in adapting to project quality standards.</TypeText>
+        <NarrowDiv>
+            <TypeH2 {...titleFadeIn} style={{textAlign: 'center'}}>Tools of Trade</TypeH2>
+            <TypeText {...textFadeIn}style={{textAlign: 'justify'}}>Below I've listed the technologies utilized in my projects. Gained proficiency using these tools through experience and interest in adapting to project quality standards.</TypeText>
             <ToolsList style={{marginTop: '36px'}}>
                 {tools.map(e => (
-                    <ToolItem key={e.toLowerCase()}>
+                    <ToolItem {...divsFadeIn} key={e.toLowerCase()}>
                         <div className="svg-container">
                             {(() => {
                                 switch (e.toLowerCase()) {

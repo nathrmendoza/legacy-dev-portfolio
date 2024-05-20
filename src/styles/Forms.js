@@ -13,6 +13,8 @@ export const Input = styled.input`
     border-radius: 5px;
     border: 1px solid #000;
     margin: 0 0 16px;
+    transition: all 0.25s ease-out;
+    
     &:disabled {
         opacity: 0.45;
         pointer-events: none;
@@ -31,6 +33,8 @@ export const TextArea = styled.textarea`
     height: 220px;
     border: 1px solid #000;
     margin: 0 0 16px;
+    transition: all 0.25s ease-out;
+
     &:disabled {
         opacity: 0.45;
         pointer-events: none;

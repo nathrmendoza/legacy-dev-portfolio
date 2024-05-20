@@ -34,13 +34,19 @@ const PopupContainer = styled.div`
     transform: translate(-50%, -50%) scale(0);
     border-radius: 8px;
     animation: ${popupZoom} 1s ease-out forwards;
-    padding: 32px 56px 32px;
+    padding: 32px 56px;
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
+
+    @media only screen and (max-width: 768px) {
+        width: calc(100vw - 48px);
+        height: calc(100vh - 48px);
+        padding: 32px 24px
+    }
 `
 
 const CloseButton = styled.button`
@@ -73,6 +79,15 @@ const CloseButton = styled.button`
             transform: translate(-50%, -50%) rotate( 45deg);
         }
     }
+
+    @media only screen and (max-width: 768px) {
+        width: 26px;
+        height: 26px;
+        i {
+            width: 26px;
+            height: 3px;
+        }
+    }
 `
 
 const ViewSiteContainer = styled.div`
@@ -81,6 +96,11 @@ const ViewSiteContainer = styled.div`
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
+
+    @media only screen and (max-width: 640px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 `
 
 const ViewSiteAnchor = styled.a`
@@ -101,6 +121,14 @@ const ViewSiteAnchor = styled.a`
     svg {
         margin-right: 8px;
     }
+
+    @media only screen and (max-width: 768px) {
+        margin-left: 24px;
+    }
+
+    @media only screen and (max-width: 640px) {
+        margin-left: 0;
+    }
 `
 
 const ScreenshotContainer = styled.div`
@@ -108,12 +136,23 @@ const ScreenshotContainer = styled.div`
     width: 87.5%;
     flex: 1;
     margin: 0 auto;
+    
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
 `
 
 const Screenshot = styled.img`
     width: 100%;
     height: auto;
     display: block;
+`
+
+const WorkDesc = styled(TypeText)`
+    @media only screen and (max-width: 640px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
 `
 
 const WorkFeature = ({work, hidePopupHandle}) => {
@@ -136,7 +175,7 @@ const WorkFeature = ({work, hidePopupHandle}) => {
                         VIEW SITE
                     </ViewSiteAnchor>
                 </ViewSiteContainer>
-                <TypeText style={{color: textColor}}>{work.desc}</TypeText>
+                <WorkDesc style={{color: textColor}}>{work.desc}</WorkDesc>
                 <ScreenshotContainer>
                     <Screenshot src={work.fullImage} alt={`${work.name} Page Screenshot`}/>
                 </ScreenshotContainer>

@@ -1,14 +1,17 @@
 import styled from "styled-components";
-import { TypeH3, TypeText } from "../styles/Typography";
 import { useState } from "react";
-import { getTheme } from "../styles/ThemeUtils";
-
+import { TypeH3, TypeText } from "../styles/Typography";
 import { DefaultButton } from "../styles/ThemeButtons";
+
+import { divsFadeIn } from "../utils/FramerMotionAnimations";
 
 const WorkItemContainer = styled.div`
     width: 50%;
     padding: 0 24px;
-    margin: 0 0 32px;
+    @media only screen and (max-width: 640px) {
+        width: 100%;
+        padding: 0;
+    }
 `
 
 const ImageContainer = styled.div`
@@ -62,6 +65,12 @@ const WorkTitle = styled(TypeH3)`
     }
 `
 
+const WorkDesc = styled(TypeText)`
+    @media only screen and (max-width: 1024px) {
+        display: none;
+    }
+`
+
 const WorkItem = ({work, showPopupHandle}) => {
 
     const [check, setCheck] = useState(false);
@@ -71,7 +80,7 @@ const WorkItem = ({work, showPopupHandle}) => {
     const [btnHovered, setBtnHovered] = useState(false);
 
     return (
-        <WorkItemContainer>
+        <WorkItemContainer {...divsFadeIn}>
             <ImageContainer onClick={() => {showPopupHandle(work)}}>
                 <Image className={check ? 'test' : ''} src={work.imgSrc} alt={`${work.name} Thumbnail`} onClick={() => {setCheck(!check)}} />
                 <HoverBox className="hover-box">
@@ -91,7 +100,7 @@ const WorkItem = ({work, showPopupHandle}) => {
                 </HoverBox>
             </ImageContainer>
             <WorkTitle onClick={() => {showPopupHandle(work)}}>{work.name}</WorkTitle>
-            <TypeText style={{marginBottom: 0, textAlign: "justify"}}>{work.desc}</TypeText>
+            <WorkDesc style={{marginBottom: 0, textAlign: "justify"}}>{work.desc}</WorkDesc>
         </WorkItemContainer>
     )
 }

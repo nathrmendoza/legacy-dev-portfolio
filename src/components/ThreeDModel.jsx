@@ -12,7 +12,7 @@ const ThreeContainer = styled.div`
   width: 100%;
   max-width: 768px;
   max-height: 640px;
-  margin: 0 auto;
+  margin: 0 auto 24px;
   padding: 0 16px;
   aspect-ratio: 1 / 1;
 `;
@@ -26,7 +26,7 @@ const ThreeDContainer = () => {
                 <color attach="background" args={["black"]} />
                 <Model/>
                 <Environment preset="sunset" />
-                <OrbitControls enableDamping={true} enablePan={false} enableZoom={false} />
+                <OrbitControls enableDamping={true} enablePan={false} enableZoom={true} />
                 <AsciiRenderer fgColor="#fff" bgColor="#202023" />
             </Canvas>
             </Suspense>

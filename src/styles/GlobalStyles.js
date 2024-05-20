@@ -91,9 +91,10 @@ export const GlobalStyles = createGlobalStyle`
     * {
         box-sizing: border-box;
     }
+
     body {
         color: ${getTheme('textColor')};
-        background-color: ${getTheme('primaryColor')}
+        background-color: ${getTheme('primaryColor')};
     }
     b, strong {
         font-weight: 700;

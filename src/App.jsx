@@ -8,6 +8,7 @@ import Background from './components/Background'
 import Work from './components/Work'
 import Tools from './components/Tools'
 import GetInTouch from './components/GetInTouch'
+import CopyrightRow from './components/Copyright'
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
       <Work/>
       <Tools/>
       <GetInTouch/>
+      <CopyrightRow/>
     </ThemeProvider>
   )
 }
