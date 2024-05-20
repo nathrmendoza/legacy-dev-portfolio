@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components"
 import { getTheme } from "./ThemeUtils"
 
+import 'react-toastify/dist/ReactToastify.css';
+
 export const GlobalStyles = createGlobalStyle`
     /* START RESET CSS
 
@@ -130,4 +132,12 @@ export const GlobalStyles = createGlobalStyle`
       }
       
     /* END GLOBAL CSS */
+
+    /*TOASTIFY OVERRIDES*/
+    .Toastify__toast-body > div:last-child {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: ${getTheme('primaryFont')};
+    }
+    /*END TOASTIFY OVERRIDES*/
 `

@@ -13,6 +13,10 @@ export const Input = styled.input`
     border-radius: 5px;
     border: 1px solid #000;
     margin: 0 0 16px;
+    &:disabled {
+        opacity: 0.45;
+        pointer-events: none;
+    }
 `
 
 export const TextArea = styled.textarea`
@@ -27,6 +31,10 @@ export const TextArea = styled.textarea`
     height: 220px;
     border: 1px solid #000;
     margin: 0 0 16px;
+    &:disabled {
+        opacity: 0.45;
+        pointer-events: none;
+    }
 `
 
 export const SubmitButton = styled(DefaultButton)`
@@ -36,5 +44,9 @@ export const SubmitButton = styled(DefaultButton)`
     &:hover {
         background-color: ${getTheme('lightColor')};
         color: ${getTheme('darkColor')};
+    }
+    &:disabled {
+        opacity: 0.45;
+        pointer-events: none;
     }
 `
