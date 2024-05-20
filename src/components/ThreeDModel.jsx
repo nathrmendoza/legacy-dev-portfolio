@@ -23,11 +23,11 @@ const ThreeDContainer = () => {
         <ThreeContainer className="threejs-container">
             <Suspense fallback={<UILoader/>}>
             <Canvas orthographic camera={{zoom: 50, position: [0,0,100]}}>
-                <color attach="background" args={["black"]} />
+                {/* <color attach="background" args={["black"]} /> */}
                 <Model/>
                 <Environment preset="sunset" />
                 <OrbitControls enableDamping={true} enablePan={false} enableZoom={true} />
-                <AsciiRenderer fgColor="#fff" bgColor="#202023" />
+                {/* <AsciiRenderer fgColor="#fff" bgColor="#202023" /> */}
             </Canvas>
             </Suspense>
         </ThreeContainer>
