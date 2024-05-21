@@ -61,29 +61,29 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Courier';
         font-weight: 400;
         font-style: normal;
-        src: url('./fonts/CourierPrime-Regular.woff2') format('woff2'),
-             url('./fonts/CourierPrime-Regular.woff') format('woff');
+        src: url('./assets/fonts/CourierPrime-Regular.woff2') format('woff2'),
+             url('./assets/fonts/CourierPrime-Regular.woff') format('woff');
     }
     @font-face {
         font-family: 'Courier';
         font-weight: 400;
         font-style: italic;
-        src: url('./fonts/CourierPrime-Italic.woff2') format('woff2'),
-             url('./fonts/CourierPrime-Italic.woff') format('woff');
+        src: url('./assets/fonts/CourierPrime-Italic.woff2') format('woff2'),
+             url('./assets/fonts/CourierPrime-Italic.woff') format('woff');
     }
     @font-face {
         font-family: 'Courier';
         font-weight: 700;
         font-style: normal;
-        src: url('./fonts/CourierPrime-Bold.woff2') format('woff2'),
-             url('./fonts/CourierPrime-Bold.woff') format('woff');
+        src: url('./assets/fonts/CourierPrime-Bold.woff2') format('woff2'),
+             url('./assets/fonts/CourierPrime-Bold.woff') format('woff');
     }
     @font-face {
         font-family: 'Courier';
         font-weight: 700;
         font-style: italic;
-        src: url('./fonts/CourierPrime-BoldItalic.woff2') format('woff2'),
-             url('./fonts/CourierPrime-BoldItalic.woff') format('woff');
+        src: url('./assets/fonts/CourierPrime-BoldItalic.woff2') format('woff2'),
+             url('./assets/fonts/CourierPrime-BoldItalic.woff') format('woff');
     }
     /* END FONTS */
 
@@ -95,6 +95,10 @@ export const GlobalStyles = createGlobalStyle`
     body {
         color: ${getTheme('textColor')};
         background-color: ${getTheme('primaryColor')};
+        padding-top: 128px;
+        @media only screen and (max-width: 768px) {
+            padding-top: 76px;
+        }
     }
     b, strong {
         font-weight: 700;

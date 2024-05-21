@@ -14,7 +14,7 @@ const LoaderContainer = styled.div`
 const UILoader = () => {
     return (
         <LoaderContainer>
-            <img src="./loader.gif" alt="Loader" width="84" height="84" />
+            <img src="./assets/loader.gif" alt="Loader" width="84" height="84" />
         </LoaderContainer>
     )
 }
