@@ -10,8 +10,7 @@ import UILoader from './Loader';
 
 const ThreeContainer = styled.div`
   width: 100%;
-  max-width: 768px;
-  max-height: 640px;
+  height: 400px;
   margin: 0 auto 24px;
   padding: 0 16px;
   aspect-ratio: 1 / 1;
@@ -23,11 +22,11 @@ const ThreeDContainer = () => {
         <ThreeContainer className="threejs-container">
             <Suspense fallback={<UILoader/>}>
             <Canvas orthographic camera={{zoom: 50, position: [0,0,100]}}>
-                {/* <color attach="background" args={["black"]} /> */}
+                <color attach="background" args={["black"]} />
                 <Model/>
                 <Environment preset="sunset" />
-                <OrbitControls enableDamping={true} enablePan={false} enableZoom={true} />
-                {/* <AsciiRenderer fgColor="#fff" bgColor="#202023" /> */}
+                <OrbitControls enableDamping={true} enablePan={false} enableZoom={false} />
+                <AsciiRenderer fgColor="#fff" bgColor="#202023" />
             </Canvas>
             </Suspense>
         </ThreeContainer>

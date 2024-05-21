@@ -3,8 +3,6 @@ import styled from "styled-components"
 
 import {
   DiHtml5,
-  DiCss3,
-  DiJavascript1,
   DiJqueryLogo,
   DiReact,
   DiWordpress,
@@ -14,7 +12,7 @@ import { SiJavascript, SiPhp, SiShopify } from "react-icons/si";
 import { NarrowDiv } from "../styles/ThemeContainers"
 import { TypeH2, TypeText } from "../styles/Typography"
 import { FaCss3 } from "react-icons/fa";
-import { divsFadeIn, textFadeIn, titleFadeIn } from "../utils/FramerMotionAnimations";
+import { textFadeIn, titleFadeIn } from "../utils/FramerMotionAnimations";
 import { useEffect, useRef } from "react";
 
 const ToolsList = styled.div`
