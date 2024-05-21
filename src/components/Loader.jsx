@@ -3,12 +3,12 @@ import styled from "styled-components"
 
 const LoaderContainer = styled.div`
     width: 100%;
-    max-width: 768px;
-    margin: 0 auto;
+    height: 400px;
+    margin: 0 auto 24px;
+    padding: 0 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    aspect-ratio: 1 / 1;
 `;
 
 const UILoader = () => {

@@ -13,7 +13,6 @@ const ThreeContainer = styled.div`
   height: 400px;
   margin: 0 auto 24px;
   padding: 0 16px;
-  aspect-ratio: 1 / 1;
 `;
 
 const ThreeDContainer = () => {

@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { NarrowDiv } from "../styles/ThemeContainers"
-import { TypeH2, TypeText } from "../styles/Typography"
+import { TypeH2 } from "../styles/Typography"
 import { getTheme } from "../styles/ThemeUtils"
 
 import { divsFadeIn, titleFadeIn } from "../utils/FramerMotionAnimations"

@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { NarrowDiv } from "../styles/ThemeContainers";
 import { TypeH2, TypeText } from "../styles/Typography";
 import { Input, TextArea, SubmitButton } from "../styles/Forms";

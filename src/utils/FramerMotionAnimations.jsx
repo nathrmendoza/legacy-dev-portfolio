@@ -27,10 +27,3 @@ export const textFade = {
     whileInView: { opacity: 1 },
     viewport: { once: true }   
 }
-
-export const iconsFadeIn = {
-    as: motion.a,
-    initial: { opacity: 0, scale: 0 },
-    whileInView: { opacity: 1, scale: 1 },
-    viewport: {once: true}
-}

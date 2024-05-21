@@ -95,9 +95,9 @@ export const GlobalStyles = createGlobalStyle`
     body {
         color: ${getTheme('textColor')};
         background-color: ${getTheme('primaryColor')};
-        padding-top: 128px;
+        padding-top: 72px;
         @media only screen and (max-width: 768px) {
-            padding-top: 76px;
+            padding-top: 40px;
         }
     }
     b, strong {

@@ -1,8 +1,11 @@
+import { useRef, useEffect } from "react";
+import { useInView, useAnimation, motion } from "framer-motion";
+
 import styled from "styled-components";
 import { TypeH3, TypeText } from "../styles/Typography";
 import { FaFacebookSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import { getTheme } from "../styles/ThemeUtils";
-import { divsFadeIn, iconsFadeIn, textFadeIn, titleFadeIn } from "../utils/FramerMotionAnimations";
+import { textFadeIn, titleFadeIn } from "../utils/FramerMotionAnimations";
 
 const SocialsContainer = styled.div`
     margin: 72px 0 0;
@@ -32,18 +35,62 @@ const SocialsAnchor = styled.a`
 `
 
 const MySocials = () => {
+
+    const controls = useAnimation();
+    const scContainer = useRef(null);
+    const scInView = useInView(scContainer);
+
+    useEffect(() => {
+        if (scInView) {
+            controls.start('visible');
+        }
+    }, [controls, scInView])
+
     return (
-        <SocialsContainer>
+        <SocialsContainer ref={scContainer}>
             <TypeH3 {...titleFadeIn} style={{textAlign: 'center', marginBottom: '12px'}}>My Socials</TypeH3>
             <TypeText {...textFadeIn} style={{textAlign: 'center'}}>Fairly active on these platforms, feel free to reach out.</TypeText>
             <IconsContainer >
-                <SocialsAnchor {...iconsFadeIn} transition={{delay: 0.25, duration: 0.3}} href="https://www.linkedin.com/in/nathaniel-mendoza-425203163/" target="_blank" rel="noopener noreferrer">
+                <SocialsAnchor 
+                        as={motion.a}
+                        initial="hidden"  
+                        animate={controls}
+                        variants={{
+                            hidden: {opacity: 0, scale: 0},
+                            visible: {opacity: 1, scale: 1, transition:{
+                                delay: 0.2,
+                                duration: 0.3,
+                                type: "spring"
+                            }}
+                        }} href="https://www.linkedin.com/in/nathaniel-mendoza-425203163/" target="_blank" rel="noopener noreferrer">
                     <FaLinkedin />
                 </SocialsAnchor>
-                <SocialsAnchor {...iconsFadeIn} transition={{delay: 0.5, duration: 0.3}} href="https://www.facebook.com/neil328/" target="_blank" rel="noopener noreferrer">
+                <SocialsAnchor 
+                        as={motion.a}
+                        initial="hidden"  
+                        animate={controls}
+                        variants={{
+                            hidden: {opacity: 0, scale: 0},
+                            visible: {opacity: 1, scale: 1, transition:{
+                                delay: 0.4,
+                                duration: 0.3,
+                                type: "spring"
+                            }}
+                        }} href="https://www.facebook.com/neil328/" target="_blank" rel="noopener noreferrer">
                     <FaFacebookSquare/>
                 </SocialsAnchor>
-                <SocialsAnchor {...iconsFadeIn} transition={{delay: 0.75, duration: 0.3}} href="https://www.instagram.com/mndoza.nath/" target="_blank" rel="noopener noreferrer">
+                <SocialsAnchor 
+                        as={motion.a}
+                        initial="hidden"  
+                        animate={controls}
+                        variants={{
+                            hidden: {opacity: 0, scale: 0},
+                            visible: {opacity: 1, scale: 1, transition:{
+                                delay: 0.6,
+                                duration: 0.3,
+                                type: "spring"
+                            }}
+                        }} href="https://www.instagram.com/mndoza.nath/" target="_blank" rel="noopener noreferrer">
                     <FaInstagramSquare/>
                 </SocialsAnchor>
             </IconsContainer>
