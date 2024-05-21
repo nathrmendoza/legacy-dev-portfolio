@@ -15,7 +15,6 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles/>
-      <ThreeDContainer/>
       <Overview/>
       <Background/>
       <Work/>
