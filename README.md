@@ -1,5 +1,7 @@
 # React + Vite
 
+Legacy portfolio, hosted on vercel https://web-portfolio-2024-nath-sage-nu.vercel.app/
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
